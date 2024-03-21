@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg,rgb(0, 255, 132), rgb(17, 0, 255));
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    /* height: 500px; */
+    width: 350px;
+    background: linear-gradient(136deg,rgb(0, 255, 153), rgb(0, 13, 255));
+    text-align: center;
+    border-radius: 10%;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+.search{
+    margin:10px ;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-between; */
+    cursor: pointer;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    width: 75%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 16px;
+    margin: 5px;
+    position: relative;
+    /* display: block; */
+    /* flex: 1; */
+    font-size: 18px;
+
+}
+
+.search button{
+    margin: 0;
+    border: 0;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search button img{
+    
+    border: 0;
+    width:16px;
+    cursor: pointer;
+    /* background-color: none; */
+    
+    
+}
+
+.extra{
+    margin:50px;
+    display: flex;
+    margin: 10px;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-size: 12px;
+}
+.extra img{
+    margin-right:5px;
+    width: 30px;
+    height: 50px;
+}
+/* button{
+    background: linear-gradient(102deg, rgba(0, 255, 183, 0.879) 0%, rgb(0, 76, 255) 100%);
+    cursor: pointer;
+    transform: rotate();
+} */
+
+ button {
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background: linear-gradient(102deg, rgba(0, 255, 183, 0.879) 0%, rgb(0, 76, 255) 100%);
+    color:rebeccapurple;
+  } 
+

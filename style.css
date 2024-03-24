@@ -94,4 +94,7 @@ body{
     background: linear-gradient(102deg, rgba(0, 255, 183, 0.879) 0%, rgb(0, 76, 255) 100%);
     color:rebeccapurple;
   } 
+  .tt{
+    display: none;
+  }
 

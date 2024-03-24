@@ -32,11 +32,18 @@
 async function getData(location){
     const data=await fetch("https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=cf634e36e3accda1e65cc0a2121c6a37&units=metric");
     var detail= await data.json();
-    console.log(detail);
-    document.querySelector(".temp").innerHTML=detail.main.temp+ "°C";
-    document.querySelector(".city").innerHTML=detail.name;
-    document.querySelector(".humidity").innerHTML=detail.main.humidity +"<br/>humidity";
-    document.querySelector(".speed").innerHTML=detail.wind.speed+"<br/> Wind Speed" ;
+    // console.log(detail);
+
+   var img="images/"+detail.weather[0].main+".png";
+   console.log(img);
+   console.log(document.querySelector(".weather"));
+   document.querySelector(".weather").setAttribute("src",img);
+//    console.log(document.querySelector("img").setAttribute("src",));
+    document.querySelector(".temp").innerHTML=Math.round(detail.main.temp)+ "°C";
+    document.querySelector(".condition").innerHTML=detail.weather[0].main;
+    document.querySelector(".humidity").innerHTML=detail.main.humidity+"%" +"<br/>humidity";
+    document.querySelector(".speed").innerHTML=detail.wind.speed+" km/hr"+"<br/> Wind Speed" ;
+    document.querySelector(".tt").style.display="block";
 }
 
 

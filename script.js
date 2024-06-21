@@ -32,7 +32,7 @@
 async function getData(location){
     const data=await fetch("https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid=cf634e36e3accda1e65cc0a2121c6a37&units=metric");
     var detail= await data.json();
-    // console.log(detail);
+    console.log(detail);
 
    var img="images/"+detail.weather[0].main+".png";
    console.log(img);
